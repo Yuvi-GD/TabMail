@@ -1,0 +1,28 @@
+<Page
+    x:Class="TabMail.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="#101010">
+
+    <Grid>
+        <Grid Background="#AA000000"/>
+        <Border Width="420" Padding="24" Background="{StaticResource LoginCardBrush}" CornerRadius="14"
+            HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Spacing="12">
+                <TextBlock Text="TabMail" FontSize="26" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+                <InfoBar x:Name="ErrorBar" IsOpen="False" Severity="Error"
+                 Title="Login failed" Message="Please verify your server and credentials."/>
+
+                <TextBox x:Name="ServerBox" PlaceholderText="POP3 Server (e.g., pop.yourdomain.com)"/>
+                <TextBox x:Name="PortBox" PlaceholderText="Port (e.g., 995)" InputScope="Number"/>
+                <CheckBox x:Name="SslCheck" Content="Use SSL (recommended)" IsChecked="True"/>
+                <TextBox x:Name="UserBox" PlaceholderText="Username / Email"/>
+                <PasswordBox x:Name="PassBox" PlaceholderText="Password"/>
+
+                <Button Content="Login" Click="Login_Click" HorizontalAlignment="Stretch"/>
+                <TextBlock Text="Tip: Most POP3 servers use port 995 with SSL." Opacity="0.7" FontSize="12" TextWrapping="WrapWholeWords"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

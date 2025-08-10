@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TabMail (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "TabMail (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

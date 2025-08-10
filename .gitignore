@@ -1,0 +1,69 @@
+# VS / VS Code
+.vs/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Build outputs
+**/bin/
+**/obj/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+
+# Test results
+TestResults/
+*.trx
+*.coverage*
+*.coveragexml
+
+# WinUI / App Packaging
+AppPackages/
+BundleArtifacts/
+*.appx
+*.appxbundle
+*.appxupload
+*.appxsym
+*.msix
+*.msixbundle
+*.msixupload
+*.msixsym
+*.pri
+*.appxrecipe
+
+# WebView2 & app caches
+**/InlineCache/
+WebView2/
+EdgeWebView/
+*.webview2
+*.log
+*.tlog
+*.cache
+*.tmp
+
+# User / machine specific
+*.user
+*.userosscache
+*.suo
+*.csproj.user
+*.vcxproj.user
+*.pfx
+*.cer
+*.pubxml
+*.publish.xml
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Optional local DB/cache
+*.db
+*.db-shm
+*.db-wal

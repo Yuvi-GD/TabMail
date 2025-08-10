@@ -1,0 +1,28 @@
+﻿<Application
+    x:Class="TabMail.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:local="using:TabMail">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <controls:XamlControlsResources/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Brushes (Login page needs this) -->
+            <SolidColorBrush x:Key="LoginCardBrush" Color="#2A2F3A"/>
+
+            <!-- App theme brushes -->
+            <SolidColorBrush x:Key="AppBackgroundBrush" Color="#141822"/>
+            <SolidColorBrush x:Key="CardBgBrush" Color="#1C1F28"/>
+            <SolidColorBrush x:Key="CardHoverBrush" Color="#232735"/>
+            <SolidColorBrush x:Key="CardSelectedBrush" Color="#2B3245"/>
+            <SolidColorBrush x:Key="CardBorderBrush" Color="#2E3447"/>
+
+            <!-- Our Bool→Visibility converter -->
+            <local:BoolToVisConverter x:Key="BoolToVis"/>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
