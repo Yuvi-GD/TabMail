@@ -21,3 +21,36 @@ Tabbed WinUI 3 email client for Windows with multi‑account POP3, inline images
    ```bash
    git clone https://github.com/Yuvi-GD/TabMail.git
    cd TabMail
+3. Open the solution in Visual Studio and **Build → Rebuild**.
+4. **Run (F5)** → Add your POP3 account (host, port, SSL, username, password).
+
+> POP3 is receive‑focused. SMTP settings can be customized if your provider uses different server/ports.
+
+## 🧰 Configuration
+
+* Accounts are stored locally in app settings (for now).
+* Inline images are written to a local `InlineCache` and displayed via WebView2 virtual host mapping.
+
+## 🗺️ Roadmap
+
+* Detachable tabs (move tab to its own window)
+* On‑disk header cache (SQLite) for instant startup
+* Unread states, sender avatars
+* Full composer (To/CC/BCC, attachments)
+* IMAP support (optional)
+
+## 🤝 Contributing
+
+PRs and issues welcome! Please:
+
+* File issues with repro steps / screenshots.
+* Keep PRs focused and small when possible.
+
+## 📄 License
+
+[MIT](LICENSE)
+
+## 🙏 Acknowledgements
+
+* [MailKit/MimeKit](https://github.com/jstedfast/MailKit)
+* WinUI 3 and WebView2 teams
