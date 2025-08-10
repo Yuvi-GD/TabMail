@@ -1,21 +1,19 @@
+# VS / VS Code
+.vs/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
 # Build outputs
-bin/
-obj/
+**/bin/
+**/obj/
 [Bb]uild/
 [Bb]in/
 [Oo]bj/
 
-# VS / VS Code
-.vs/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-.vscode/*
-
 # NuGet
-*.nupkg
 packages/
+*.nupkg
 *.snupkg
 *.nuget.props
 *.nuget.targets
@@ -23,10 +21,10 @@ packages/
 # Test results
 TestResults/
 *.trx
-*.coverage
+*.coverage*
 *.coveragexml
 
-# App packaging (WinUI/UWP/MSIX)
+# WinUI / App Packaging
 AppPackages/
 BundleArtifacts/
 *.appx
@@ -40,25 +38,24 @@ BundleArtifacts/
 *.pri
 *.appxrecipe
 
-# Logs & caches
-*.log
-*.tlog
-*.cache
-*.ide
-*.tmp
-*.tmp_proj
-
-# WebView2 cache (dev artifacts)
-*/InlineCache/
+# WebView2 & app caches
+**/InlineCache/
 WebView2/
 EdgeWebView/
 *.webview2
+*.log
+*.tlog
+*.cache
+*.tmp
 
-# User-specific config
-*.userprefs
+# User / machine specific
+*.user
+*.userosscache
+*.suo
 *.csproj.user
 *.vcxproj.user
 *.pfx
+*.cer
 *.pubxml
 *.publish.xml
 
@@ -66,7 +63,7 @@ EdgeWebView/
 .DS_Store
 Thumbs.db
 
-# Future local DB/cache (optional)
+# Optional local DB/cache
 *.db
 *.db-shm
 *.db-wal
