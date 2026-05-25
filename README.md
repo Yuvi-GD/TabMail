@@ -26,6 +26,22 @@ Tabbed WinUI 3 email client for Windows with multi‑account POP3, inline images
 
 > POP3 is receive‑focused. SMTP settings can be customized if your provider uses different server/ports.
 
+## 🛠 Setup (Dev)
+
+### Prereqs
+- **Windows 10/11**
+- **Visual Studio 2022** with workloads:
+  - .NET Desktop Development
+  - Windows App SDK / WinUI 3 tooling
+- **.NET 8 SDK**
+- **WebView2 Runtime** (usually already installed with Edge)
+
+### Clone & Restore
+```bash
+git clone https://github.com/Yuvi-GD/TabMail.git
+cd TabMail
+dotnet restore
+
 ## 🧰 Configuration
 
 * Accounts are stored locally in app settings (for now).
